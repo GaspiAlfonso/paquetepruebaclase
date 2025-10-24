@@ -19,24 +19,45 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of paquetepruebaclase is to ...
+Paquetepruebaclase es un paquete de ejemplo creado con fines educativos. Incluye funciones simples y conjunto de datos sintéticos para practicar la creación, documentación y publicación de paquetes en R.
 
-## Installation
+Funciones incluidas:
 
-You can install the development version of paquetepruebaclase from [GitHub](https://github.com/) with:
+suma(): Suma dos números.
+
+cm_a_pulgadas(): Convierte centímetros a pulgadas.
+
+datos: Un conjunto de 1000 números generados aleatoriamente.
+
+## Instalación
+
+Podés instalar la versión en desarrollo desde GitHub:
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
 pak::pak("GaspiAlfonso/paquetepruebaclase")
 ```
 
-## Example
+## Ejemplos
 
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(paquetepruebaclase)
-## basic example code
+```
+Sumar dos números:
+```{r}
+suma(3,5)
+```
+Convertir cm a pulgadas:
+```{r}
+cm_a_pulgadas(25)
+```
+
+Ver 1000 números aleatorios:
+```{r}
+datos
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
